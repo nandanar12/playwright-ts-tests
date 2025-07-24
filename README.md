@@ -14,7 +14,7 @@ The framework is capable of:
 
 1. Clone this repository
 2. Navigate to the project folder
-3. Install Node.js (LTS recommended) and npm
+3. Install Node.js and npm
 4. Run "npm ci" from the terminal
 
 
