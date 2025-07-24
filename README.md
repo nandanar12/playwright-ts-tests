@@ -23,3 +23,9 @@ The framework is capable of:
 1. Run the command "npx playwright test --headed" from the terminal
 or
 Run the command "npx playwright test tests/register.spec.ts --headed" from the terminal
+
+# How to view the reports
+
+1. Once after run the tests, you can view the html report popping out in the browser. You can view the test results.
+2. You will get a message like this "Serving HTML report at http://localhost:9323. Press Ctrl+C to quit." in the terminal.
+3. You can quit using Ctrl + C to go back to the CLI.
