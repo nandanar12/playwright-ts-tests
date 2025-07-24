@@ -10,10 +10,8 @@ export async function createAndSubmitRegistrationForm(page: Page, userData: Regi
     await homePage.navigateToHomePage();
     await homePage.navigateToRegistrationPage();
     await registerForm.isRegistrationFormLoaded();
-    if (userData) {
-        await registerForm.fillRegistrationForm(userData);
-    }
-
+    await registerForm.fillRegistrationForm(userData);
+    
     // Terms and Conditions is disabled, raised a defect; once it's resolved, this step will be enabled
     // await registerForm.checkTerms();
     await registerForm.submit();

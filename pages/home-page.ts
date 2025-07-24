@@ -14,7 +14,11 @@ export class HomePage {
     //URL is defined in .env file
     async navigateToHomePage() {
         const baseUrl = process.env.URL;
-        await this.page.goto(baseUrl!);
+        if (baseUrl) {
+            await this.page.goto(baseUrl);
+        } else {
+            throw new Error('Base URL is not defined in the environment variables.');
+        }
     }
 
     //Navigate to the registration form

@@ -88,11 +88,11 @@ export class RegisterForm {
         const actualPhoneNumber = getRegistrationDetails(response, 'Phone Number');
         const actualCountry = getRegistrationDetails(response, 'Country');
         const actualEmailAddress = getRegistrationDetails(response, 'Email');
-        expect.soft(actualFirstName).toBe(registerUser.firstName || '');
-        expect.soft(actualLastName).toBe(registerUser.lastName || '');
-        expect.soft(actualPhoneNumber).toBe(registerUser.phoneNumber || '');
-        expect.soft(actualCountry).toBe(registerUser.country || '');
-        expect.soft(actualEmailAddress).toBe(registerUser.emailAddress || '');
+        expect.soft(actualFirstName).toBe(registerUser.firstName);
+        expect.soft(actualLastName).toBe(registerUser.lastName);
+        expect.soft(actualPhoneNumber).toBe(registerUser.phoneNumber);
+        expect.soft(actualCountry).toBe(registerUser.country);
+        expect.soft(actualEmailAddress).toBe(registerUser.emailAddress);
 
     }
 }

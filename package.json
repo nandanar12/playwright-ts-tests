@@ -1,13 +1,8 @@
 {
   "name": "playwrighttest",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "description": "Playwright-based end-to-end test automation framework for validating registration functionality to test ‘Spot the Bugs’ page in https://qa-practice.netlify.app/bugs-form.",
+  "author": "Ram Ganesan",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.54.1",
